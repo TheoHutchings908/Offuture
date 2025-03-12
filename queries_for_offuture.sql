@@ -45,10 +45,34 @@ order by
 	ship_mode ASC;
 -----------------
 
-SELECT                     --- ROW count check
+SELECT                     --- ROW count checks
 	count(customer_id_short) AS row_count
 FROM
     offuture.customer;
+
+---
+SELECT 
+	count(order_id) AS row_count
+FROM
+    offuture.order;
+
+---
+SELECT 
+	count(order_id) AS row_count
+FROM
+    offuture.order_item;
+
+---
+SELECT 
+	count(product_id) AS row_count
+FROM
+    offuture.product;
+
+---
+SELECT 
+	count(address_id) AS row_count
+FROM
+    offuture.address;
 
 -----------------
 
@@ -215,7 +239,7 @@ LIMIT
 -----------------
 
 
-
+	
 
 
 
